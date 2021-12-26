@@ -200,7 +200,7 @@ int search_spiral_step(uint max_iterations)
         x_seed = floor(x_center+x_off);
         y_seed = floor(y_center+y_off);
         SetRandomSeed(world_seed, x_seed, y_seed);
-        if(Random(0, 100000) == 100000 && Random(0, 1000) == 999)
+        if(Random(0, 100000) == 100000 && Random(0, 1000) != 999)
         {
             search_spiral_result[0] = x_seed;
             search_spiral_result[1] = y_seed;
